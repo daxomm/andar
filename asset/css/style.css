@@ -240,11 +240,13 @@ otf -> 지원범위가 저버전 */
 
 .header .side-menu .menu-area .etc-area .event .text-box { position: relative; }
 
-.header .side-menu .menu-area .etc-area .event .text-box .text h3 { margin: 12px 0 6px; font-weight: 500; font-size: 14px; line-height: 18px; letter-spacing: -0.02em; color: #222; }
+.header .side-menu .menu-area .etc-area .event .text-box .link-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: 12px 0 6px; }
 
-.header .side-menu .menu-area .etc-area .event .text-box .text .msg { font-size: 12px; line-height: 16px; letter-spacing: -0.02em; font-weight: 400; color: #777; }
+.header .side-menu .menu-area .etc-area .event .text-box .link-wrap .txt-title { font-weight: 500; font-size: 14px; line-height: 18px; letter-spacing: -0.02em; color: #222; }
 
-.header .side-menu .menu-area .etc-area .event .text-box .link-all { position: absolute; top: 0; right: 0; font-size: 12px; line-height: 16px; letter-spacing: -0.02em; font-weight: 500; color: #777; }
+.header .side-menu .menu-area .etc-area .event .text-box .link-wrap .link-all { font-size: 12px; line-height: 16px; letter-spacing: -0.02em; font-weight: 500; color: #777; }
+
+.header .side-menu .menu-area .etc-area .event .text-box .msg { font-size: 12px; line-height: 16px; letter-spacing: -0.02em; font-weight: 400; color: #777; }
 
 .header .side-menu .menu-area .etc-area .brand-wrap { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; border-radius: 2px; overflow: hidden; margin: 30px 0; }
 
@@ -413,25 +415,27 @@ otf -> 지원범위가 저버전 */
 
 .coupon .link-coupon img { width: 100%; }
 
-.sc-product .product.list02 { padding-top: 40px; }
+.sc-product .product .top-area .link-img { display: block; height: 100%; }
 
-.sc-product .product .top-area a .image img { width: 100%; }
+.sc-product .product .top-area .link-img .image-box { width: 100%; }
+
+.sc-product .product .top-area .link-img .image-box img { width: 100%; }
 
 .sc-product .product .top-area .desc { padding: 20px 16px 20px; }
 
-.sc-product .product .top-area .desc h3 { font-size: 26px; line-height: 35px; color: #333; letter-spacing: -0.05em; font-weight: 700; }
+.sc-product .product .top-area .desc .title { font-size: 26px; line-height: 35px; color: #333; letter-spacing: -0.05em; font-weight: 700; }
 
-.sc-product .product .top-area .desc p { padding: 14px 0 28px; font-size: 16px; line-height: 26px; letter-spacing: -0.05em; color: #333; font-weight: 400; }
+.sc-product .product .top-area .desc .msg { padding: 14px 0 28px; font-size: 16px; line-height: 26px; letter-spacing: -0.05em; color: #333; font-weight: 400; }
 
-.sc-product .product .bottom-area { padding: 0 16px; }
+.sc-product .product .bottom-area .img-wrap { max-width: 110px; }
 
-.sc-product .product .bottom-area .small-list { display: -webkit-box; display: -ms-flexbox; display: flex; padding: 20px 0; position: relative; }
+.sc-product .product .bottom-area .link-img { display: block; height: 100%; }
 
-.sc-product .product .bottom-area .small-list .image img { width: 110px; height: 165px; }
+.sc-product .product .bottom-area .link-img img { width: 100%; height: 100%; }
 
-.sc-product .product .bottom-area .small-list .info { padding: 0 28px; }
+.sc-product .product .bottom-area .prd-item:first-child { border-bottom: 1px solid #eee; width: 100%; }
 
-.sc-product .product .bottom-area .small-list:first-child { border-bottom: 1px solid #eee; width: 100%; }
+.sc-product .product + .product { padding-top: 40px; }
 
 .sc-new .four-image-list .four-image-item .image-wrap { position: relative; }
 
@@ -470,3 +474,9 @@ otf -> 지원범위가 저버전 */
 .company-area.sc-membership { background: url(../images/bg/banner01.jpg) no-repeat; padding: 65px 20px; background-size: cover; background-position: center; margin-bottom: 10px; margin-top: 70px; }
 
 .company-area.sc-offline { background: url(../images/bg/banner02.jpg) no-repeat; padding: 80px 20px 74px; background-size: cover; background-position: center; }
+
+.sc-category .sc-title { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+
+.sc-category .link-view { margin-right: 20px; display: inline-block; vertical-align: middle; font-size: 14px; line-height: 1.5; font-weight: 400; color: #000; }
+
+.sc-category .link-view::after { content: ''; display: inline-block; background: url(../images/icon/icon-move-gr.png) no-repeat; background-size: 15px auto; background-position: center; width: 15px; height: 11px; margin-left: 4px; margin-bottom: 1px; }

@@ -532,9 +532,13 @@
           .text-box {
             position: relative;
 
-            .text {
-              h3 {
-                margin: 12px 0 6px;
+            .link-wrap{
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              margin: 12px 0 6px;
+
+              .txt-title {
                 font-weight: 500;
                 font-size: 14px;
                 line-height: 18px;
@@ -542,23 +546,20 @@
                 color: #222;
               }
 
-              .msg {
+              .link-all {
                 font-size: 12px;
                 line-height: 16px;
                 letter-spacing: -0.02em;
-                font-weight: 400;
+                font-weight: 500;
                 color: #777;
               }
             }
 
-            .link-all {
-              position: absolute;
-              top: 0;
-              right: 0;
+            .msg {
               font-size: 12px;
               line-height: 16px;
               letter-spacing: -0.02em;
-              font-weight: 500;
+              font-weight: 400;
               color: #777;
             }
           }
