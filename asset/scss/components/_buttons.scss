@@ -67,6 +67,7 @@
   font-weight: 400;
   letter-spacing: -0.05em;
   width: 100%;
+  @include ellipsis;
 }
 
 .price{
