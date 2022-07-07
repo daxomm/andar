@@ -23,9 +23,6 @@ $(function(){
   });
 
 
-  
-
-
   // 띠배너
 
   var swiper = new Swiper(".ad-top", {
@@ -84,7 +81,7 @@ $(function(){
   // 가로 스크롤 상품
 
   var swiper = new Swiper(".sc-category .swiper", {
-    slidesPerView:2.1,
+    slidesPerView:2.2,
     spaceBetween:10,
 
   });
