@@ -1,0 +1,235 @@
+// 컴포넌트란?
+// 컴포넌트는 "소형" 레이아웃 같은 것이다. 사이트 내에서 재사용가능한 작은 부분들을 여기에 정의한다.
+//  buttons, forms, profile pictures와 같은 것이 여기에 해당된다. 
+
+.link-detail{
+  display: inline-block;
+  border-radius: 2px;
+  border: 1px solid #1e1e1e;
+  color: #fff;
+  padding: 8px 47px 8px 18px;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: -0.03em;
+  font-weight: 500;
+  background:#1e1e1e url(../images/icon/Icon_move.png) no-repeat;
+  background-size: 15px auto;
+  background-position: calc(100% - 18px) center;
+}
+
+.link-box{
+  padding: 0 38px;
+  margin: 0 auto;
+  margin-bottom: 65px;
+  .link-more{
+    display: inline-block;
+    width: 100%;
+    height: 52px;
+    line-height: 52px;
+    border: 1px solid #e0e0e0;
+    box-sizing: border-box;
+    background: #fff;
+    font-size: 15px;
+    color: #222;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .link-more::after{
+    content: '';
+    display: inline-block;
+    background:url(../images/icon/go_cate.png) no-repeat;
+    background-position: center;
+    background-size: 19px auto;
+    width: 24px;
+    height: 19px;
+    vertical-align: text-bottom;
+    padding-left: 5px;
+  }
+}
+
+//////////////////////////
+
+.review{
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 400;
+  font-weight: 700;
+  color: #8e1f29;
+  margin-top: 16px;
+  display: block;
+}
+
+.name{
+  padding: 10px 0;
+  font-size: 13px;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  @include ellipsis;
+}
+
+.price{
+  .discount{
+    color: #8E1F29 !important;
+    font-weight: 700;
+    margin-right: 5px;
+    vertical-align: top;
+    font-size: 15px;
+  }
+
+  .curr-prc{
+    color: #333 !important;
+    padding: 0;
+    font-size: 15px !important;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: -0.03em;
+    vertical-align: top;
+  }
+
+  .ori-prc{
+    font-size: 13px !important;
+    line-height: 18px !important;
+    font-weight: 400 !important;
+    color: #8d8d8d !important;
+    margin-left: 5px;
+    text-decoration: line-through;
+  }
+}
+
+.option{
+  display: block;
+  font-size: 13px;
+  line-height: 11px;
+  letter-spacing: -0.05em;
+  color: #999;
+  font-weight: 500;
+  padding-top: 9px;
+  padding-bottom: 8px;
+  margin-bottom: 5px;
+}
+
+.txt{
+  display: inline-block;
+  border: 1px solid rgba(142,31,41,0.5);
+  box-sizing: border-box;
+  padding: 5px 6px;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 1;
+  color: #8e1f28;
+  margin-top: 5px;
+}
+
+//////////////////////////
+
+.four-image-list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  .four-image-item{
+    width: 50%;
+    padding-right: 1.11%;
+    padding-bottom: 50px;
+
+    .image-wrap{
+      img{
+        width: 157px;
+        height: 235px;
+        display: block;
+      }
+      .new-btn{
+        img{
+          width: 40px;
+          height: 22px;
+        }
+      }
+    }
+  }
+
+  .four-image-item:nth-child(2n){
+    padding-left: 1.11%;
+    padding-right: 0;
+  }
+}
+
+//////////////////////////
+
+.horizon-image-list{
+  display: flex;
+  .horizon-image-item{
+    margin-right: 10px;
+    .image{
+      img{
+        width: 131px;
+        height: 196px;
+      }
+    }
+
+    .info{
+      padding: 15px 5% 0;
+    }
+  }
+  .horizon-image-item:last-child{
+    margin-right: 0;
+  }
+}
+
+//////////////////////////
+
+/* .btn-more{
+  position: absolute;
+  display: inline-block;
+  top: 35px;
+  right: 5%;
+  padding: 0 5px;
+
+  .more{
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  .more::after{
+    content: '';
+    display: inline-block;
+    background: url(../images/icon/icon-move-gr.png) center no-repeat;
+    width: 15px;
+    height: 11px;
+    margin-left: 3px;
+    margin-bottom: 2px;
+    background-size: 15px auto;
+    vertical-align: middle;
+  }
+} */
+
+//////////////////////////
+
+.cate-more{
+  position: absolute;
+  display: inline-block;
+  top: 35px;
+  right: 5%;
+  padding: 0 5px;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 500;
+
+  .cate-more::after{
+    content: '';
+    display: inline-block;
+    background: url(../images/icon/icon-move-gr.png) center no-repeat;
+    width: 15px;
+    height: 11px;
+    margin-left: 3px;
+    margin-bottom: 2px;
+    background-size: 15px auto;
+    vertical-align: middle;
+  }
+}
+
+
+
+
+

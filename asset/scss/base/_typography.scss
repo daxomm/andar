@@ -1,0 +1,52 @@
+/* ttf -> 지원범위가 저버전
+otf -> 지원범위가 저버전 */
+
+/* woff -> 모던 웹(최신브라우저)을 지원해주는 폰트 형식
+*** woff2 -> woff의 20% 압축파일! 제일 best, 용량이 적으면서 같은 기능이다. */
+
+/* eot -> 익스플로러 지원 */
+
+/* svg -> 코드로 된 폰트, 벡터 이미지 */
+
+@font-face {
+  font-family: 'Noto';
+  src: url(../fonts/NotoSansKR-Light-Hestia.woff) format("woff");
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Noto';
+  src: url(../fonts/NotoSansKR-Regular-Hestia.woff) format("woff");
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Noto';
+  src: url(../fonts/NotoSansKR-Medium-Hestia.woff) format("woff");
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Noto';
+  src: url(../fonts/NotoSansKR-Bold-Hestia.woff) format("woff");
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-Regular.woff2) format("woff2");
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-Medium.woff2) format("woff2");
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-SemiBold.woff2) format("woff2");
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Gilroy';
+  src: url(../fonts/Gilroy-Bold.woff2) format("woff2");
+  font-weight: 700;
+}

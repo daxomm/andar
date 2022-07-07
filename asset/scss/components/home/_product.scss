@@ -1,0 +1,39 @@
+.prd-list{
+  .prd-item{
+
+  }
+  .img-box{
+    img{width: 100%;}
+
+  }
+  .info-box{
+    
+  }
+
+  &.layout-01{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    .prd-item{
+      width: calc(50% - 5px);
+    }
+  }
+
+  .sc-product & {
+    padding: 0 16px;
+
+    .prd-item{
+      display: flex;
+      padding: 20px 0;
+    }
+
+    .img-box{
+      width: 110px;
+    }
+
+    .info-box{
+      padding: 0 28px;
+    }
+  }
+}
