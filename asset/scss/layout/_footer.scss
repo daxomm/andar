@@ -6,14 +6,14 @@
   .cs-area{
     padding-bottom: 30px;
 
-    h3{
+    .cs{
       font-size: 13px;
       line-height: 16px;
       font-weight: 500;
       padding-bottom: 15px;
     }
 
-    a{
+    .link-tel{
       font-size: 18px;
       line-height: 21px;
       font-weight: 700;
@@ -21,45 +21,46 @@
       display: block;
     }
 
-    p{
+    .hours{
       font-size: 13px;
       line-height: 16px;
       font-weight: 400;
       padding-bottom: 5px;
-
     }
-    p+p{padding-bottom: 0;}
+
+    .hours+.hours{
+      padding-bottom: 0;
+    }
   }
 
   .sns-area{
     .link-sns{
       margin-right: 25px;
       display: block;
-      
-    }
 
-    .ic-facebook{
-      display: inline-block;
-      background: url(../images/icon/icon_facebook.png) center no-repeat;
-      background-size: 12px 22px;
-      width: 12px;
-      height: 22px;
-    }
-
-    .ic-youtube{
-      display: inline-block;
-      background: url(../images/icon/icon_Instagram.png) center/100% no-repeat;
-      background-size: 22px 22px;
-      width: 22px;
-      height: 22px;
-    }
-
-    .ic-insatagram{
-      display: inline-block;
-      background: url(../images/icon/icon_YouTube.png) center/100% no-repeat;
-      background-size: 22px 22px;
-      width: 22px;
-      height: 22px;
+      &.ic-facebook{
+        display: inline-block;
+        background: url(../images/icon/icon_facebook.png) center no-repeat;
+        background-size: 12px 22px;
+        width: 12px;
+        height: 22px;
+      }
+  
+      &.ic-youtube{
+        display: inline-block;
+        background: url(../images/icon/icon_Instagram.png) center/100% no-repeat;
+        background-size: 22px 22px;
+        width: 22px;
+        height: 22px;
+      }
+  
+      &.ic-insatagram{
+        display: inline-block;
+        background: url(../images/icon/icon_YouTube.png) center/100% no-repeat;
+        background-size: 22px 22px;
+        width: 22px;
+        height: 22px;
+      }
     }
   }
 
@@ -69,24 +70,15 @@
     .util-list{
       display: flex;
       flex-wrap: wrap;
-      .util-item{
-        position: relative;
-        display: inline-block;
-        padding-right: 10px;
-        margin-right: 7px;
+    }
 
-        a{
-          font-size: 12px;
-          line-height: 1.7;
-          color: #777;
-          font-weight: 700;
-          padding: 9px 0;
-          font-weight: 700;
-          letter-spacing: -0.5px;
-          display: inline-block;
-        }
-      }
-      .util-item:after{
+    .util-item{
+      position: relative;
+      display: inline-block;
+      padding-right: 10px;
+      margin-right: 7px;
+
+      &::after{
         content: '';
         display: inline-block;
         position: absolute;
@@ -98,13 +90,25 @@
         background: #ccc;
       }
 
-      .util-item:last-child::after{
+      &:last-child::after{
         display: none;
       }
+    }
+
+    .link-util{
+      font-size: 12px;
+      line-height: 1.7;
+      color: #777;
+      font-weight: 700;
+      padding: 9px 0;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      display: inline-block;
     }
   }
 
   .info-area{
+
     address{
       .addr-box{
         line-height: 21px;
@@ -121,13 +125,13 @@
           height: 10px;
           background: #ccc;
           margin: 0 10px;
+
+          &:last-child::after{
+            display: none;
+          }
         }
 
-        span:last-child::after{
-          display: none;
-        }
-
-        a{
+        .link-tel{
           color: #555;
         }
       }
@@ -141,6 +145,7 @@
     color: #777;
     padding: 30px 0 0;
     font-weight: 700;
+
     strong{
       font-weight: 300;
     }
@@ -152,25 +157,25 @@
     
     .link-mark{
       margin-right: 22px;
-    }
 
-    .ic-ftc{
-      display: inline-block;
-      background: url(../images/icon/icon_ftc.png) center/100% no-repeat;
-      width: 45px;
-      height: 34px;
-    }
-
-    .ic-symantec{
-      display: inline-block;
-      background: url(../images/icon/icon_symantec.png) center/100% no-repeat;
-      width: 36px;
-    }
-
-    .ic-kg{
-      display: inline-block;
-      background: url(../images/icon/icon_kg.png) center/100% no-repeat;
-      width: 27px;
+      &.ic-ftc{
+        display: inline-block;
+        background: url(../images/icon/icon_ftc.png) center/100% no-repeat;
+        width: 45px;
+        height: 34px;
+      }
+  
+      &.ic-symantec{
+        display: inline-block;
+        background: url(../images/icon/icon_symantec.png) center/100% no-repeat;
+        width: 36px;
+      }
+  
+      &.ic-kg{
+        display: inline-block;
+        background: url(../images/icon/icon_kg.png) center/100% no-repeat;
+        width: 27px;
+      }
     }
   }
 }

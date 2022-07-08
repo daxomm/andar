@@ -258,45 +258,47 @@ otf -> 지원범위가 저버전 */
 
 .header .side-deimmed.on { opacity: 1; visibility: visible; }
 
+.header .festival { color: #E55427 !important; }
+
 .footer-wrap { background: #fafafa; padding: 40px 16px 40px; color: #555; }
 
 .footer-wrap .cs-area { padding-bottom: 30px; }
 
-.footer-wrap .cs-area h3 { font-size: 13px; line-height: 16px; font-weight: 500; padding-bottom: 15px; }
+.footer-wrap .cs-area .cs { font-size: 13px; line-height: 16px; font-weight: 500; padding-bottom: 15px; }
 
-.footer-wrap .cs-area a { font-size: 18px; line-height: 21px; font-weight: 700; padding-bottom: 10px; display: block; }
+.footer-wrap .cs-area .link-tel { font-size: 18px; line-height: 21px; font-weight: 700; padding-bottom: 10px; display: block; }
 
-.footer-wrap .cs-area p { font-size: 13px; line-height: 16px; font-weight: 400; padding-bottom: 5px; }
+.footer-wrap .cs-area .hours { font-size: 13px; line-height: 16px; font-weight: 400; padding-bottom: 5px; }
 
-.footer-wrap .cs-area p + p { padding-bottom: 0; }
+.footer-wrap .cs-area .hours + .hours { padding-bottom: 0; }
 
 .footer-wrap .sns-area .link-sns { margin-right: 25px; display: block; }
 
-.footer-wrap .sns-area .ic-facebook { display: inline-block; background: url(../images/icon/icon_facebook.png) center no-repeat; background-size: 12px 22px; width: 12px; height: 22px; }
+.footer-wrap .sns-area .link-sns.ic-facebook { display: inline-block; background: url(../images/icon/icon_facebook.png) center no-repeat; background-size: 12px 22px; width: 12px; height: 22px; }
 
-.footer-wrap .sns-area .ic-youtube { display: inline-block; background: url(../images/icon/icon_Instagram.png) center/100% no-repeat; background-size: 22px 22px; width: 22px; height: 22px; }
+.footer-wrap .sns-area .link-sns.ic-youtube { display: inline-block; background: url(../images/icon/icon_Instagram.png) center/100% no-repeat; background-size: 22px 22px; width: 22px; height: 22px; }
 
-.footer-wrap .sns-area .ic-insatagram { display: inline-block; background: url(../images/icon/icon_YouTube.png) center/100% no-repeat; background-size: 22px 22px; width: 22px; height: 22px; }
+.footer-wrap .sns-area .link-sns.ic-insatagram { display: inline-block; background: url(../images/icon/icon_YouTube.png) center/100% no-repeat; background-size: 22px 22px; width: 22px; height: 22px; }
 
 .footer-wrap .util-area { padding: 30px 0 30px; }
 
 .footer-wrap .util-area .util-list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
-.footer-wrap .util-area .util-list .util-item { position: relative; display: inline-block; padding-right: 10px; margin-right: 7px; }
+.footer-wrap .util-area .util-item { position: relative; display: inline-block; padding-right: 10px; margin-right: 7px; }
 
-.footer-wrap .util-area .util-list .util-item a { font-size: 12px; line-height: 1.7; color: #777; font-weight: 700; padding: 9px 0; font-weight: 700; letter-spacing: -0.5px; display: inline-block; }
+.footer-wrap .util-area .util-item::after { content: ''; display: inline-block; position: absolute; top: 50%; right: 0; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 1px; height: 10px; background: #ccc; }
 
-.footer-wrap .util-area .util-list .util-item:after { content: ''; display: inline-block; position: absolute; top: 50%; right: 0; -webkit-transform: translateY(-50%); transform: translateY(-50%); width: 1px; height: 10px; background: #ccc; }
+.footer-wrap .util-area .util-item:last-child::after { display: none; }
 
-.footer-wrap .util-area .util-list .util-item:last-child::after { display: none; }
+.footer-wrap .util-area .link-util { font-size: 12px; line-height: 1.7; color: #777; font-weight: 700; padding: 9px 0; font-weight: 700; letter-spacing: -0.5px; display: inline-block; }
 
 .footer-wrap .info-area address .addr-box { line-height: 21px; font-size: 11px; font-weight: 400; color: #777; display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
 
 .footer-wrap .info-area address .addr-box span::after { content: ''; display: inline-block; width: 1px; height: 10px; background: #ccc; margin: 0 10px; }
 
-.footer-wrap .info-area address .addr-box span:last-child::after { display: none; }
+.footer-wrap .info-area address .addr-box span::after:last-child::after { display: none; }
 
-.footer-wrap .info-area address .addr-box a { color: #555; }
+.footer-wrap .info-area address .addr-box .link-tel { color: #555; }
 
 .footer-wrap .copy-area { font-size: 11px; line-height: 13px; letter-spacing: -0.02em; color: #777; padding: 30px 0 0; font-weight: 700; }
 
@@ -306,11 +308,11 @@ otf -> 지원범위가 저버전 */
 
 .footer-wrap .mark-area .link-mark { margin-right: 22px; }
 
-.footer-wrap .mark-area .ic-ftc { display: inline-block; background: url(../images/icon/icon_ftc.png) center/100% no-repeat; width: 45px; height: 34px; }
+.footer-wrap .mark-area .link-mark.ic-ftc { display: inline-block; background: url(../images/icon/icon_ftc.png) center/100% no-repeat; width: 45px; height: 34px; }
 
-.footer-wrap .mark-area .ic-symantec { display: inline-block; background: url(../images/icon/icon_symantec.png) center/100% no-repeat; width: 36px; }
+.footer-wrap .mark-area .link-mark.ic-symantec { display: inline-block; background: url(../images/icon/icon_symantec.png) center/100% no-repeat; width: 36px; }
 
-.footer-wrap .mark-area .ic-kg { display: inline-block; background: url(../images/icon/icon_kg.png) center/100% no-repeat; width: 27px; }
+.footer-wrap .mark-area .link-mark.ic-kg { display: inline-block; background: url(../images/icon/icon_kg.png) center/100% no-repeat; width: 27px; }
 
 .link-detail { display: inline-block; border-radius: 2px; border: 1px solid #1e1e1e; color: #fff; padding: 8px 47px 8px 18px; font-size: 14px; line-height: 20px; letter-spacing: -0.03em; font-weight: 500; background: #1e1e1e url(../images/icon/Icon_move.png) no-repeat; background-size: 15px auto; background-position: calc(100% - 18px) center; }
 
@@ -319,6 +321,10 @@ otf -> 지원범위가 저버전 */
 .link-box .link-more { display: inline-block; width: 100%; height: 52px; line-height: 52px; border: 1px solid #e0e0e0; -webkit-box-sizing: border-box; box-sizing: border-box; background: #fff; font-size: 15px; color: #222; font-weight: 500; text-align: center; }
 
 .link-box .link-more::after { content: ''; display: inline-block; background: url(../images/icon/go_cate.png) no-repeat; background-position: center; background-size: 19px auto; width: 19px; height: 19px; vertical-align: text-bottom; padding-left: 5px; }
+
+.link-img { display: block; height: 100%; }
+
+.link-img img { width: 100%; height: 100%; }
 
 .review { font-size: 13px; line-height: 13px; font-weight: 400; font-weight: 700; color: #8e1f29; margin-top: 16px; display: block; }
 
@@ -336,32 +342,7 @@ otf -> 지원범위가 저버전 */
 
 .layout-01 .prd-item { padding-bottom: 50px; }
 
-.four-image-list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; }
-
-.four-image-list .four-image-item { width: 50%; padding-right: 1.11%; padding-bottom: 50px; }
-
-.four-image-list .four-image-item .image-wrap img { width: 157px; height: 235px; display: block; }
-
-.four-image-list .four-image-item .image-wrap .new-btn img { width: 40px; height: 22px; }
-
-.four-image-list .four-image-item:nth-child(2n) { padding-left: 1.11%; padding-right: 0; }
-
-.horizon-image-list { display: -webkit-box; display: -ms-flexbox; display: flex; }
-
-.horizon-image-list .horizon-image-item { margin-right: 10px; }
-
-.horizon-image-list .horizon-image-item .image img { width: 131px; height: 196px; }
-
-.horizon-image-list .horizon-image-item .info { padding: 15px 5% 0; }
-
-.horizon-image-list .horizon-image-item:last-child { margin-right: 0; }
-
-/* .btn-more{ position: absolute; display: inline-block; top: 35px; right: 5%; padding: 0 5px; .more{ display: block; font-size: 14px; line-height: 1.5; font-weight: 500; } .more::after{ content: ''; display: inline-block; background: url(../images/icon/icon-move-gr.png) center no-repeat; width: 15px; height: 11px; margin-left: 3px; margin-bottom: 2px; background-size: 15px auto; vertical-align: middle; } } */
-.cate-more { position: absolute; display: inline-block; top: 35px; right: 5%; padding: 0 5px; font-size: 14px; line-height: 1.5; font-weight: 500; }
-
-.cate-more .cate-more::after { content: ''; display: inline-block; background: url(../images/icon/icon-move-gr.png) center no-repeat; width: 15px; height: 11px; margin-left: 3px; margin-bottom: 2px; background-size: 15px auto; vertical-align: middle; }
-
-.festival { color: #E55427 !important; }
+.layout-01 .info-box { padding: 15px 5% 0; }
 
 .sc-title { font-size: 20px; line-height: 29px; color: #333; letter-spacing: -0.05em; font-weight: 700; }
 
@@ -403,23 +384,15 @@ otf -> 지원범위가 저버전 */
 
 .sc-visual .swiper .swiper-pagination .swiper-pagination-bullet-active { opacity: 1; }
 
-.sc-best .link-img { display: block; height: 100%; }
-
-.sc-best .info-box { padding: 15px 5% 0; }
-
-.sc-best .info-box .link-name { width: 100%; }
-
 .coupon { width: 100%; margin: -20px auto 20px; }
 
 .coupon .link-coupon { display: block; height: 100%; }
 
 .coupon .link-coupon img { width: 100%; }
 
-.sc-product .product .top-area .link-img { display: block; height: 100%; }
+.sc-product .product .top-area .image-box { width: 100%; }
 
-.sc-product .product .top-area .link-img .image-box { width: 100%; }
-
-.sc-product .product .top-area .link-img .image-box img { width: 100%; }
+.sc-product .product .top-area .image-box img { width: 100%; }
 
 .sc-product .product .top-area .desc { padding: 20px 16px 20px; }
 
@@ -429,54 +402,36 @@ otf -> 지원범위가 저버전 */
 
 .sc-product .product .bottom-area .img-wrap { max-width: 110px; }
 
-.sc-product .product .bottom-area .link-img { display: block; height: 100%; }
-
-.sc-product .product .bottom-area .link-img img { width: 100%; height: 100%; }
-
 .sc-product .product .bottom-area .prd-item:first-child { border-bottom: 1px solid #eee; width: 100%; }
 
 .sc-product .product + .product { padding-top: 40px; }
 
-.sc-new .four-image-list .four-image-item .image-wrap { position: relative; }
-
-.sc-new .four-image-list .four-image-item .image-wrap .new-btn { position: absolute; top: 0; right: 0; }
-
-.sc-new .info { padding: 15px 5% 0; }
-
-.sc-new .btn-new { padding: 0 38px; margin-bottom: 65px; }
-
 .sc-brandstory { width: 100%; margin: 20px 0; background-color: #C86733; display: inline-block; }
 
-.sc-brandstory a { padding: 56px 20px; display: block; }
+.sc-brandstory .link-brand { padding: 56px 20px; display: block; }
 
-.sc-brandstory a .title { color: #fff; font-size: 18px; letter-spacing: -0.5px; margin: 0 auto 10px; font-weight: 400; display: inline-block; border-bottom: 1.5px solid #fff; padding-bottom: 5px; line-height: 1.2; }
+.sc-brandstory .link-brand .title { color: #fff; font-size: 18px; letter-spacing: -0.5px; margin: 0 auto 10px; font-weight: 400; display: inline-block; border-bottom: 1.5px solid #fff; padding-bottom: 5px; line-height: 1.2; }
 
-.sc-brandstory a strong { font-size: 30px; line-height: 36px; letter-spacing: -0.03em; color: #fff; font-weight: 700; display: block; }
+.sc-brandstory .link-brand strong { font-size: 30px; line-height: 36px; letter-spacing: -0.03em; color: #fff; font-weight: 700; display: block; }
 
-.sc-brandstory a p { padding: 10px 0 5px; font-size: 12px; line-height: 1.4; color: #fff; letter-spacing: -0.02em; font-weight: 400; }
+.sc-brandstory .link-brand .msg { padding: 10px 0 5px; font-size: 12px; line-height: 1.4; color: #fff; letter-spacing: -0.02em; font-weight: 400; }
 
-.sc-brandstory a .link-btn { display: inline-block; width: 100px; margin-top: 20px; padding: 10px 0; font-size: 12px; line-height: 14px; letter-spacing: -0.03em; font-weight: 500; color: #fff; text-align: center; border: 1px solid #fff; }
+.sc-brandstory .link-brand .link-btn { display: inline-block; width: 100px; margin-top: 20px; padding: 10px 0; font-size: 12px; line-height: 14px; letter-spacing: -0.03em; font-weight: 500; color: #fff; text-align: center; border: 1px solid #fff; }
 
 .sc-category { padding-left: 20px; }
-
-.sc-category.leggings { position: relative; }
-
-.sc-category.bratop { position: relative; }
-
-.sc-category.set { position: relative; }
-
-.company-area a h2 { font-size: 26px; line-height: 31px; font-weight: 700; letter-spacing: -0.02em; color: #fff; }
-
-.company-area a p { font-size: 15px; line-height: 1.4; font-weight: 400; padding: 15px 0 30px; letter-spacing: -0.02em; color: #fff; }
-
-.company-area a .more-view { border: 1px solid #fff; color: #fff; padding: 7px 25px 8px; font-size: 15px; line-height: 18px; letter-spacing: -0.03em; display: inline-block; }
-
-.company-area.sc-membership { background: url(../images/bg/banner01.jpg) no-repeat; padding: 65px 20px; background-size: cover; background-position: center; margin-bottom: 10px; margin-top: 70px; }
-
-.company-area.sc-offline { background: url(../images/bg/banner02.jpg) no-repeat; padding: 80px 20px 74px; background-size: cover; background-position: center; }
 
 .sc-category .sc-title { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
 
 .sc-category .link-view { margin-right: 20px; display: inline-block; vertical-align: middle; font-size: 14px; line-height: 1.5; font-weight: 400; color: #000; }
 
 .sc-category .link-view::after { content: ''; display: inline-block; background: url(../images/icon/icon-move-gr.png) no-repeat; background-size: 15px auto; background-position: center; width: 15px; height: 11px; margin-left: 4px; margin-bottom: 1px; }
+
+.company-area .link-company .title { font-size: 26px; line-height: 31px; font-weight: 700; letter-spacing: -0.02em; color: #fff; }
+
+.company-area .link-company .msg { font-size: 15px; line-height: 1.4; font-weight: 400; padding: 15px 0 30px; letter-spacing: -0.02em; color: #fff; }
+
+.company-area .link-company .more-view { border: 1px solid #fff; color: #fff; padding: 7px 25px 8px; font-size: 15px; line-height: 18px; letter-spacing: -0.03em; display: inline-block; }
+
+.company-area.sc-membership { background: url(../images/bg/banner01.jpg) no-repeat; padding: 65px 20px; background-size: cover; background-position: center; margin-bottom: 10px; margin-top: 70px; }
+
+.company-area.sc-offline { background: url(../images/bg/banner02.jpg) no-repeat; padding: 80px 20px 74px; background-size: cover; background-position: center; }
