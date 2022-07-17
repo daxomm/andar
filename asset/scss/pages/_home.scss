@@ -93,24 +93,26 @@
         }
       }
 
-      .desc{
+      .desc-wrap{
         padding: 20px 16px 20px;
-
-        .title{
-          font-size: 26px;
-          line-height: 35px;
-          color: #333;
-          letter-spacing: -0.05em;
-          font-weight: 700;
-        }
-
-        .msg{
-          padding: 14px 0 28px;
-          font-size: 16px;
-          line-height: 26px;
-          letter-spacing: -0.05em;
-          color: #333;
-          font-weight: 400;
+        .link-desc{
+  
+          .title{
+            font-size: 26px;
+            line-height: 35px;
+            color: #333;
+            letter-spacing: -0.05em;
+            font-weight: 700;
+          }
+  
+          .msg{
+            padding: 14px 0 28px;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: -0.05em;
+            color: #333;
+            font-weight: 400;
+          }
         }
       }
     }

@@ -394,11 +394,11 @@ otf -> 지원범위가 저버전 */
 
 .sc-product .product .top-area .image-box img { width: 100%; }
 
-.sc-product .product .top-area .desc { padding: 20px 16px 20px; }
+.sc-product .product .top-area .desc-wrap { padding: 20px 16px 20px; }
 
-.sc-product .product .top-area .desc .title { font-size: 26px; line-height: 35px; color: #333; letter-spacing: -0.05em; font-weight: 700; }
+.sc-product .product .top-area .desc-wrap .link-desc .title { font-size: 26px; line-height: 35px; color: #333; letter-spacing: -0.05em; font-weight: 700; }
 
-.sc-product .product .top-area .desc .msg { padding: 14px 0 28px; font-size: 16px; line-height: 26px; letter-spacing: -0.05em; color: #333; font-weight: 400; }
+.sc-product .product .top-area .desc-wrap .link-desc .msg { padding: 14px 0 28px; font-size: 16px; line-height: 26px; letter-spacing: -0.05em; color: #333; font-weight: 400; }
 
 .sc-product .product .bottom-area .img-wrap { max-width: 110px; }
 
