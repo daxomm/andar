@@ -3,16 +3,26 @@ $(function(){
   // 사이드 메뉴 열고 닫기
   $(".header .btn-menu").click(function (e) {
     e.preventDefault();
-    $('.side-deimmed').addClass('on')
+    $('.side-deimmed').addClass('show')
     $('body').addClass('overflowHidden')
     $('.side-menu').addClass('on')
   })
   $(".side-menu .close-btn").click(function (e) {
     e.preventDefault();
-    $('.side-deimmed').removeClass('on')
+    $('.side-deimmed').removeClass('show')
     $('body').removeClass('overflowHidden')
     $('.side-menu').removeClass('on')
   })
+
+
+  // 모달 창 클릭 시 영역 닫기
+
+  $('.side-deimmed').click(function(){
+    $('.side-menu').removeClass('on');
+    $('.side-deimmed').removeClass('show');
+    $('body').removeClass('overflowHidden')
+  });
+
 
   // 사이드 메뉴안의 아코디언 메뉴
 
@@ -86,4 +96,5 @@ $(function(){
 
   });
 
-})
+
+}) //end
