@@ -178,8 +178,6 @@ otf -> 지원범위가 저버전 */
 
 .header .logo-area .link-info:after { width: 18px; height: 18px; background-position: -25px 0; }
 
-.header .nav-area { display: none; }
-
 .header .all-nav { display: none; }
 
 .header .side-menu { width: 93%; height: 100vh; position: fixed; top: 0; left: -100%; background: #fff; overflow-y: hidden; z-index: 10; overflow: scroll; overflow-x: hidden; padding: 0 16px; color: #333; -webkit-transition: all 0.5s ease; transition: all 0.5s ease; }
