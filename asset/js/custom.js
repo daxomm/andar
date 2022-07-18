@@ -47,7 +47,7 @@ $(function(){
 
 
 
-  // 스크롤 하면 메뉴 보였다가 안보였다가 하기
+  // 스크롤 시 숨겨진 상단 메뉴 보이기
 
   $(window).scroll(function(){
     curr = $(this).scrollTop();
@@ -61,6 +61,7 @@ $(function(){
   })
 
 
+  // 버튼 클릭 시 메뉴 펼치고 접기
 
   $('.btn-more').click(function(e){
     e.preventDefault()
